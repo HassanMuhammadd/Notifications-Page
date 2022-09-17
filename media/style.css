@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --Blue: hsl(219, 85%, 26%);
+    --Red: hsl(1, 90%, 64%);
+    --Verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+}
+
+.cont {
+    height: 100vh;
+    background-color: var(--Verylightgrayishblue);
+}
+
+.app {
+    box-shadow: 0 5px 50px var(--Lightgrayishblue2);
+    border-radius: 10px;
+    height: 85%;
+}
+
+.one p {
+    color: var(--Verydarkblue)
+}
+
+#num {
+    margin-left: 10px;
+    background-color: var(--Blue);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#read {
+    color: var(--Darkgrayishblue);
+}
+
+#read:hover {
+    color: var(--Blue);
+    cursor: pointer;
+}
+
+.notif {
+    border-radius: 5px;
+}
+
+.un {
+    background-color: var(--Verylightgrayishblue);
+}
+
+.notif img {
+    width: 40px;
+}
+
+.notif p {
+    font-size: 12px;
+    color: var(--Darkgrayishblue)
+}
+
+.notif .fw-bold {
+    margin-right: 5px;
+    color: var(--Verydarkblue);
+    font-size: 12px;
+}
+
+.notif span,
+.notif b {
+    font-size: 12px;
+    ;
+}
+
+@media (max-width:500px) {
+    .app {
+        height: 100%!important;
+    }
+    .notif p,
+    .notif .fw-bold,
+    .notif span,
+    .notif b {
+        font-size: 10px;
+    }
+    .chessText {
+        width: 150px!important;
+    }
+}
+
+.unread {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--Red);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.notif span:hover,
+.notif b:hover {
+    color: var(--Blue);
+    cursor: pointer;
+}
+
+.notif:hover {
+    cursor: pointer;
+}
+
+.grp {
+    color: var(--Blue)
+}
+
+.msg {
+    border-radius: 5px;
+    border: 2px solid var(--Lightgrayishblue1);
+    font-size: 14px;
+    ;
+}
+
+.msg:hover {
+    background-color: var(--Lightgrayishblue1);
+    cursor: pointer;
+}
+
+.chess {
+    right: 50px;
+    top: 0;
+}
